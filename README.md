@@ -12,9 +12,6 @@ STEP-1: Read the Plain text. STEP-2: Arrange the plain text in row columnar matr
 
 ## PROGRAM:
 ```
-NAME: MOHAMED AZEEM N
-REG NO : 212222110026
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -22,11 +19,9 @@ REG NO : 212222110026
 int main() {
     int i, j, len, rails, count, code[100][1000];
     char str[1000];
-
     printf("Enter a Secret Message:\n");
     fgets(str, sizeof(str), stdin);  // safer alternative to gets
     str[strcspn(str, "\n")] = '\0';  // remove newline character if any
-
     len = strlen(str);
 
     printf("Enter number of rails:\n");
